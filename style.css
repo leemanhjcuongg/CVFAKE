@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  scroll-behavior: smooth;
 }
 
 * body {
@@ -10,10 +11,39 @@
 }
 
 * .container {
+  overflow: hidden;
   display: block;
   position: relative;
   width: 100%;
   height: 100vh;
+}
+
+* .container .nav {
+  width: 100%;
+  display: block;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+* .container .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  font-size: 26px;
+  padding: 20px 10px;
+}
+
+* .container .nav ul li {
+  color: #fff;
+}
+
+* .container .nav ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 * .container .bg_img {
@@ -36,8 +66,8 @@
 * .container .textbox {
   position: absolute;
   color: #fff;
-  -webkit-transform: translate(calc(100vw - 686px), 333px);
-          transform: translate(calc(100vw - 686px), 333px);
+  -webkit-transform: translate(calc(100vw - 686px), calc(100vh - 734px));
+          transform: translate(calc(100vw - 686px), calc(100vh - 734px));
   font-size: 36px;
 }
 
@@ -64,5 +94,58 @@
 * .container .textbox a {
   text-decoration: none;
   color: #fff;
+}
+
+* .container .social_link {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0%;
+}
+
+* .container .social_link ul {
+  width: 44%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 44px;
+  list-style: none;
+  color: #fff;
+}
+
+* .section2 {
+  width: 100%;
+  height: 900px;
+  display: block;
+  position: relative;
+}
+
+* .section2 .bg_img2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("AVA.jpg");
+  background-repeat: no-repeat;
+  background-position: -26px -789px;
+  position: absolute;
+}
+
+* .section2 .overlay2 {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  opacity: 55%;
 }
 /*# sourceMappingURL=style.css.map */
