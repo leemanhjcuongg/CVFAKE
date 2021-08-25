@@ -77,9 +77,17 @@
   font-weight: 500;
 }
 
+* .container .textbox .title:hover {
+  text-shadow: 0 0px 18px #66ff4a;
+  -webkit-transform: translateX(-18px);
+          transform: translateX(-18px);
+}
+
 * .container .textbox .title {
   font-size: 70px;
   font-weight: 260;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 * .container .textbox .sub_title {
@@ -89,6 +97,15 @@
 * .container .textbox p {
   font-size: 24px;
   line-height: 1.8;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+* .container .textbox p:hover {
+  text-shadow: 0 0px 18px #66ff4a;
+  font-size: 26px;
+  -webkit-transform: translateX(-26px);
+          transform: translateX(-26px);
 }
 
 * .container .textbox a {
@@ -125,14 +142,40 @@
   color: #fff;
 }
 
-* .section2 {
+* .container .social_link ul a {
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+* .container .social_link ul #fb:hover {
+  text-shadow: 0 0px 18px #7ab4ff;
+}
+
+* .container .social_link ul #ig:hover {
+  text-shadow: 0 0px 18px #e8495e;
+}
+
+* .container .social_link ul #soundcloud:hover {
+  text-shadow: 0 0px 18px #f19410;
+}
+
+* .container .social_link ul #tele:hover {
+  text-shadow: 0 0px 18px #29a3e1;
+}
+
+* .container .social_link ul #sptf:hover {
+  text-shadow: 0 0px 18px #66ff4a;
+}
+
+* .summary {
   width: 100%;
   height: 900px;
   display: block;
   position: relative;
 }
 
-* .section2 .bg_img2 {
+* .summary .bg_img2 {
   width: 100%;
   height: 100%;
   background-image: url("AVA.jpg");
@@ -141,7 +184,7 @@
   position: absolute;
 }
 
-* .section2 .overlay2 {
+* .summary .overlay2 {
   width: 100%;
   height: 100%;
   background-color: #fff;
