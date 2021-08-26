@@ -78,7 +78,7 @@
 }
 
 * .container .textbox .title:hover {
-  text-shadow: 0 0px 18px #66ff4a;
+  text-shadow: 0 0px 18px white;
   -webkit-transform: translateX(-18px);
           transform: translateX(-18px);
 }
@@ -86,8 +86,8 @@
 * .container .textbox .title {
   font-size: 70px;
   font-weight: 260;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 * .container .textbox .sub_title {
@@ -97,12 +97,12 @@
 * .container .textbox p {
   font-size: 24px;
   line-height: 1.8;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 * .container .textbox p:hover {
-  text-shadow: 0 0px 18px #66ff4a;
+  text-shadow: 0 0px 18px white;
   font-size: 26px;
   -webkit-transform: translateX(-26px);
           transform: translateX(-26px);
