@@ -113,6 +113,11 @@
   color: #fff;
 }
 
+* .container .text_box_res {
+  position: absolute;
+  display: none;
+}
+
 * .container .social_link {
   position: absolute;
   width: 100%;
@@ -190,5 +195,85 @@
   background-color: #fff;
   position: absolute;
   opacity: 55%;
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 64em) {
+  .container .textbox {
+    position: absolute;
+    color: #fff;
+    -webkit-transform: translate(calc(100vw - 462px), calc(100vh - 888px));
+            transform: translate(calc(100vw - 462px), calc(100vh - 888px));
+    font-size: 26px;
+  }
+  .container .textbox h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .container .textbox .title {
+    font-size: 50px;
+    font-weight: 260;
+  }
+  .container .textbox p {
+    font-size: 24px;
+  }
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+  .container .bg_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("IMG_20210425_193232.jpg");
+    background-repeat: no-repeat;
+    background-position: -515px -919px;
+  }
+  .container .textbox {
+    display: none;
+  }
+  .container .text_box_res {
+    display: block;
+    position: absolute;
+    color: #fff;
+    -webkit-transform: translate(calc(100vw - 300px), calc(100vh - 264px));
+            transform: translate(calc(100vw - 300px), calc(100vh - 264px));
+  }
+  .container .text_box_res h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .container .text_box_res .title {
+    font-size: 29px;
+    font-weight: 300;
+  }
+  .container .text_box_res ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 26px;
+    padding-top: 10px;
+  }
+  .container .text_box_res a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .container .social_link ul {
+    width: 64%;
+    font-size: 26px;
+  }
+}
+
+/* Mobile + Tablet */
+@media only screen and (max-width: 64em) {
+  .container .nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
