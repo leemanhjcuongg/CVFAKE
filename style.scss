@@ -4,6 +4,7 @@
     margin: 0;
     border: 0;
     scroll-behavior: smooth;
+    cursor: grab;
     body{
         position:relative;
     }
@@ -51,7 +52,9 @@
         .textbox{
             position: absolute;
             color: #fff;
-            transform: translate(calc(100vw - 686px), calc(100vh - 734px) );
+            width: 44%;
+            right: 0;
+            // transform: translate(calc(100vw - 686px), calc(100vh - 734px) );
             font-size: 36px;
             h2{
                 font-size: 41px;
@@ -159,7 +162,10 @@
         .textbox{
             position: absolute;
             color: #fff;
-            transform: translate(calc(100vw - 462px), calc(100vh - 888px) );
+            width: 55%;
+            top: 26%;
+            right: 18%;
+            text-align: right;
             font-size: 26px;
             h2{
                 font-size: 36px;
@@ -194,7 +200,11 @@
             display: block;
             position: absolute;
             color: #fff;
-            transform: translate(calc(100vw - 300px), calc(100vh - 264px) );
+            margin-top: 0 auto;
+            top: 60%;
+            left: 44%;
+            transform: translate(-40%, -50%);
+            text-align: center;
             h2{
                 font-size: 18px;
                 margin-bottom: 5px;
@@ -220,7 +230,12 @@
             ul{
                 width: 64%;
                 font-size: 26px;
+                height: 0px;
             }
+            bottom: 10%
+        }
+        .nav_mobile_list{
+            display: none;
         }
     }
 }
@@ -229,6 +244,60 @@
     .container{
         .nav{
             display: none;
+        }
+        .nav_mobile{
+            height: 50px;
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 22px;
+            color: #fff;
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .nav_mobile_list{
+            position: fixed;
+            display: block;
+            color: #fff;
+            text-align: end;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 320px;
+            max-width: 100%;
+            font-size: 22px;
+            list-style: none;
+            padding: 8px 44px;
+            line-height: 2;
+            transform: translateX(1000px);
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+            transition: all 0.4s;
+        }
+        .bg_img{
+            transition: all 0.6s;
+        }
+        .nav_mobile_list.active{
+            transform: translateX(0px);
+        }
+        .nav_mobile.active{
+            display: none;
+        }
+        .textbox.active{
+            display: none;
+        }
+        .bg_img.active{
+            filter: blur(10px);
+            transform: scale(1.1);
+        }
+        .social_link{
+            bottom: 4%;
         }
     }
 }
