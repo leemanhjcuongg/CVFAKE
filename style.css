@@ -4,8 +4,6 @@
   margin: 0;
   border: 0;
   scroll-behavior: smooth;
-  cursor: -webkit-grab;
-  cursor: grab;
 }
 
 * body {
@@ -68,8 +66,7 @@
 * .container .textbox {
   position: absolute;
   color: #fff;
-  width: 44%;
-  right: 0;
+  right: 18%;
   font-size: 36px;
 }
 
@@ -97,6 +94,9 @@
 }
 
 * .container .textbox p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 24px;
   line-height: 1.8;
   -webkit-transition: all 0.4s;
@@ -151,8 +151,6 @@
 
 * .container .social_link ul a {
   color: #fff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 * .container .social_link ul #fb:hover {
@@ -173,6 +171,16 @@
 
 * .container .social_link ul #sptf:hover {
   text-shadow: 0 0px 18px #66ff4a;
+}
+
+* .container .social_link ul li {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+* .container .social_link ul li:hover {
+  -webkit-transform: scale(1.1) translateY(-8px);
+          transform: scale(1.1) translateY(-8px);
 }
 
 * .summary {
@@ -354,6 +362,15 @@
   }
   .container .social_link {
     bottom: 4%;
+  }
+}
+
+@media only screen and (max-height: 46.1875em) {
+  .container .textbox {
+    top: 26%;
+  }
+  .container .textbox h2, .container .textbox p {
+    font-size: 0.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
