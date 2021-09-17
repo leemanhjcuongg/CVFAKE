@@ -186,6 +186,13 @@
                 font-size: 24px;
             }
         }
+        .social_link{
+            ul{
+                width: 64%;
+                font-size: 44px;
+                height: 0px;
+            }
+        }
     }
 }
 /* Mobile: width < 740px */
@@ -234,7 +241,7 @@
         }
         .social_link{
             ul{
-                width: 64%;
+                width: 100%;
                 font-size: 26px;
                 height: 0px;
             }

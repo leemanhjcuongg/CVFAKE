@@ -230,6 +230,11 @@
   .container .textbox p {
     font-size: 24px;
   }
+  .container .social_link ul {
+    width: 64%;
+    font-size: 44px;
+    height: 0px;
+  }
 }
 
 /* Mobile: width < 740px */
@@ -284,7 +289,7 @@
     bottom: 10%;
   }
   .container .social_link ul {
-    width: 64%;
+    width: 100%;
     font-size: 26px;
     height: 0px;
   }
