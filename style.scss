@@ -22,8 +22,8 @@
                 display: flex;
                 justify-content: space-evenly;
                 list-style: none;
-                font-size: 26px;
-                padding: 20px 10px;
+                font-size: 18px;
+                padding: 10px 5px;
                 li{
                     color: #fff;
                     a{
@@ -102,7 +102,7 @@
                 align-items: center;
                 display: flex;
                 justify-content: space-evenly;
-                font-size: 44px;
+                font-size: 30px;
                 list-style: none;
                 color: #fff;
                 a{
@@ -130,7 +130,7 @@
                     transition: all 0.4s;
                 }
                 li:hover{
-                    transform: scale(1.1) translateY(-8px);
+                    transform: scale(1.5) translateY(-6px);
                 }
             }
             bottom: 0%;
