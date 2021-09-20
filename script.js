@@ -17,23 +17,3 @@ close.addEventListener("click", () => {
     textbox.classList.remove('active');
     bg_img.classList.remove('active');
 });
-
-// var $cursor = $('.cursor');
-
-// function moveCursor(e) {
-//   $cursor.addClass('is-moving');
-  
-// 	TweenLite.to($cursor, 0.23, {
-//     left: e.pageX,
-//     top: e.pageY,
-//     ease: Power4.easOut
-//   });
-  
-//   clearTimeout(timer);
-
-//    var timer = setTimeout(function() {
-//        $cursor.removeClass('is-moving');
-//    }, 300);
-// }
-
-// $(window).on('mousemove', moveCursor);
