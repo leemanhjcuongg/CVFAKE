@@ -158,11 +158,11 @@
 }
 
 * .container .social_link ul #ig:hover {
-  text-shadow: 0 0px 18px #e8495e;
+  text-shadow: 0 0px 18px #ff4861;
 }
 
 * .container .social_link ul #soundcloud:hover {
-  text-shadow: 0 0px 18px #f19410;
+  text-shadow: 0 0px 18px #ff6a00;
 }
 
 * .container .social_link ul #tele:hover {
@@ -171,6 +171,10 @@
 
 * .container .social_link ul #sptf:hover {
   text-shadow: 0 0px 18px #66ff4a;
+}
+
+* .container .social_link ul #dc:hover {
+  text-shadow: 0 0px 18px #8799F5;
 }
 
 * .container .social_link ul li {
