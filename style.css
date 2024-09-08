@@ -39,9 +39,10 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("IMG_20210425_193232.jpg");
+  background-image: url("./IMG_9012.JPG");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center 70%;
+  background-size: cover;
 }
 * .container .overlay {
   background-color: #000;
@@ -74,7 +75,6 @@
   padding-bottom: 5px;
 }
 * .container .textbox p {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 24px;
@@ -173,9 +173,9 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url("IMG_20210425_193232.jpg");
+    background-image: url("IMG_9012.jpg");
     background-repeat: no-repeat;
-    background-position: -515px -919px;
+    background-position: center center;
   }
   .container .textbox {
     display: none;
@@ -268,10 +268,6 @@
   .container .nav_mobile_list.active {
     transform: translateX(0px);
   }
-  .container .nav_mobile_list.active li,
-.container .nav_mobile_list.active a {
-    cursor: no-drop;
-  }
   .container .nav_mobile_list.active #close {
     cursor: pointer;
   }
@@ -294,7 +290,7 @@
     top: 26%;
   }
   .container .textbox h2,
-.container .textbox p {
+  .container .textbox p {
     font-size: 0.5em;
   }
 }/*# sourceMappingURL=style.css.map */
